@@ -11,6 +11,7 @@ module Bundler
       auto_install
       cache_all
       cache_all_platforms
+      cache_command_is_package
       disable_checksum_validation
       disable_exec_load
       disable_local_branch_check
