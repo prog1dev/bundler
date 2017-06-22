@@ -362,7 +362,6 @@ rescue LoadError
   namespace :vendor do
     task(:fileutils) { abort "Install the automatiek gem to be able to vendor gems." }
     task(:molinillo) { abort "Install the automatiek gem to be able to vendor gems." }
-    task(:postit) { abort "Install the automatiek gem to be able to vendor gems." }
     task(:thor) { abort "Install the automatiek gem to be able to vendor gems." }
     task("net-http-persistent") { abort "Install the automatiek gem to be able to vendor gems." }
   end
