@@ -71,6 +71,9 @@ The options that can be configured are:
 * `without`:
   A space-separated list of groups referencing gems to skip during installation.
 
+* `with`:
+  A space-separated list of groups referencing gems to include during installation.
+
 ## BUILD OPTIONS
 
 You can use `bundle config` to give bundler the flags to pass to the gem

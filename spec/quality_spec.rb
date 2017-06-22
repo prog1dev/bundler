@@ -169,6 +169,7 @@ RSpec.describe "The library itself" do
 
   it "documents all used settings" do
     exemptions = %w[
+      forget_cli_options
       gem.coc
       gem.mit
       warned_version
@@ -179,6 +180,7 @@ RSpec.describe "The library itself" do
 
     Bundler::Settings::BOOL_KEYS.each {|k| all_settings[k] << "in Bundler::Settings::BOOL_KEYS" }
     Bundler::Settings::NUMBER_KEYS.each {|k| all_settings[k] << "in Bundler::Settings::NUMBER_KEYS" }
+    Bundler::Settings::ARRAY_KEYS.each {|k| all_settings[k] << "in Bundler::Settings::ARRAY_KEYS" }
 
     Dir.chdir(File.expand_path("../../lib", __FILE__)) do
       key_pattern = /([a-z\._-]+)/i
